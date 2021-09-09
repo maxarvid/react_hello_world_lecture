@@ -7,7 +7,7 @@ const GreetingInput = (props) => {
         type="text"
         placeholder="Type a planet name"
         onChange={(event) => {
-          props.renderGreeting(event);
+          props.renderGreeting(event.target.value);
         }}
       />
     </React.Fragment>
